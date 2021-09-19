@@ -7,9 +7,7 @@ import 'bootstrap/dist/js/bootstrap.min.js'
 import "@fortawesome/fontawesome-free/css/all.min.css"
 import './index.css';
 import { BrowserRouter } from 'react-router-dom';
-import { Route, Switch, Redirect } from 'react-router';
 import App from './App';
-import store from './Redux/store'
 import {Provider} from 'react-redux'
 import stroe from './Redux/store';
 

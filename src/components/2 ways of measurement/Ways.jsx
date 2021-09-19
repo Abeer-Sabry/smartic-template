@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import wayStyle from './Ways.module.css'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
