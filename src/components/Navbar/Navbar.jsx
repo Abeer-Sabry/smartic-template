@@ -1,17 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { Spring, animated, useSpring } from 'react-spring'
 import NavStyle from './Navbar.module.css'
 import { useDispatch } from 'react-redux'
 import PopUpAction from '../../Redux/Popup/actions'
 import CartPopUpAction from '../../Redux/CartPopUp/action'
 const Navbar = () => {
     const dispatch = useDispatch()
-    const [rotate, setrotate] = useState(false)
-    const styles = useSpring({
-        from: { rotate: 0 },
-        to: { rotate: 360 }
-    })
+
     return (
         <div>
             <nav className=" px-5 navbar navbar-expand-lg navbar-light bg-transparent py-4 ">
@@ -23,7 +18,7 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item ">
-                            <NavLink onClick={() => { setrotate(v => !v) }} className="nav-link mr-4  " to="#">Home  <span className="plus"><i className="fas fa-plus"></i> </span></NavLink>
+                            <NavLink className="nav-link mr-4  " to="#">Home  <span className="plus"><i className="fas fa-plus"></i> </span></NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink className="nav-link  mr-4" to="#">Shop <span className="plus"><i className="fas fa-plus"></i></span></NavLink>

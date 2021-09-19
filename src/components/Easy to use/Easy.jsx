@@ -1,13 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import style from "./Easy.module.css"
 const Easy = () => {
-    useEffect(() => {
-        Aos.init({
-            duration: 2000
-        });
-    }, [])
+    Aos.init({
+        duration: 2000
+    });
     return (
         <div>
             <div className="easy section">

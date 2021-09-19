@@ -1,11 +1,16 @@
 import React from 'react'
 import buyStyle from './Buy.module.css'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 const Buy = () => {
+    Aos.init({
+        duration: 2000
+    });
     return (
         <div>
             <div className={`${buyStyle.bg}   `}>
                 <div className={`${buyStyle.style}    `}>
-                    <div className="">
+                    <div data-aos="fade-up" className="">
                         <h6 className={`${buyStyle.color}  color`}>Buy Now</h6>
                         <div className="d-flex ">
                             <h1 className={`${buyStyle.heading}    mr-4`}>Enormous Wool Bench</h1>

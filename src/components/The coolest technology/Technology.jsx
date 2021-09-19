@@ -1,11 +1,8 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import techStyle from './Technology.module.css'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 const Technology = () => {
-    useEffect(() => {
-
-    }, [])
     Aos.init({
         duration: 2000
     });

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import reviwStyle from './Reviews.module.css'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
@@ -6,9 +6,6 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 const Reviews = () => {
-    useEffect(() => {
-
-    }, [])
     Aos.init({
         duration: 2000
     });

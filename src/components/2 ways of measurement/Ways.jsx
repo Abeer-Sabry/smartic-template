@@ -3,11 +3,9 @@ import wayStyle from './Ways.module.css'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 const Ways = () => {
-    useEffect(() => {
-        Aos.init({
-            duration: 2000
-        });
-    }, [])
+    Aos.init({
+        duration: 2000
+    });
     return (
         <div>
             <div className="ways section">
