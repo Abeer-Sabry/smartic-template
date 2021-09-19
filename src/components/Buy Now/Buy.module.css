@@ -1,0 +1,59 @@
+.bg {
+  background-image: url("https://demo2.wpopal.com/smartic/wp-content/uploads/2020/11/h8_bg.jpg");
+  background-repeat: no-repeat;
+  padding: 80px 0;
+  padding-right: 40px;
+  background-size: cover;
+  background-position: 0px -210px;
+}
+.textcolor {
+  color: white;
+  border: none;
+  width: 50%;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+.textcolor:hover {
+  background-color: var(--main-bg-color);
+  transition: all ease 0.3s;
+}
+.heading:hover {
+  color: var(--main-color);
+  transition: all ease 0.3s;
+}
+.style {
+  display: flex;
+  justify-content: flex-end;
+}
+.input {
+  border: 1px solid rgb(190, 190, 190);
+  padding: 5px;
+}
+.input:hover {
+  border-color: var(--main-color);
+}
+@media (max-width: 1408px) {
+  .textcolor,
+  .input,
+  .heading,
+  .info,
+  .color,
+  .stock {
+    margin-left: 70px;
+  }
+}
+@media (max-width: 1383px) {
+  .textcolor,
+  .input,
+  .heading,
+  .info,
+  .color,
+  .stock {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 1202px) {
+  .style {
+    padding: 0;
+  }
+}

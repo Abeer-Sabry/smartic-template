@@ -1,0 +1,177 @@
+.img {
+  border-radius: 36px;
+  display: inline-block;
+}
+.bg {
+  background-image: url("https://demo2wpopal.b-cdn.net/smartic/wp-content/uploads/2020/10/h8_shape-1.png");
+  background-position: -570px -10px;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1180px) {
+  .heading {
+    font-size: 41px;
+  }
+  .paragraph {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1120px) {
+  .heading {
+    font-size: 37px;
+  }
+  .paragraph {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1000px) {
+  .heading {
+    font-size: 35px;
+  }
+  .paragraph {
+    font-size: 14px;
+  }
+}
+@media (max-width: 940px) {
+  .heading {
+    font-size: 34px;
+  }
+  .paragraph {
+    font-size: 14px;
+  }
+}
+@media (max-width: 800px) {
+  .heading {
+    font-size: 30px;
+  }
+  .paragraph {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .heading {
+    font-size: 43px;
+  }
+  .paragraph {
+    font-size: 16px;
+  }
+  .img {
+    margin-bottom: 50px;
+    margin-left: 35px;
+  }
+}
+@media (max-width: 760px) {
+  .heading {
+    font-size: 43px;
+  }
+  .paragraph {
+    font-size: 16px;
+  }
+  .img {
+    margin-bottom: 50px;
+    margin-left: 35px;
+  }
+}
+@media (max-width: 660px) {
+  .heading {
+    font-size: 40px;
+  }
+  .paragraph {
+    font-size: 15px;
+  }
+  .img {
+    margin-bottom: 50px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 620px) {
+  .heading {
+    font-size: 38px;
+  }
+  .paragraph {
+    font-size: 14px;
+  }
+  .img {
+    margin-bottom: 40px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 580px) {
+  .heading {
+    font-size: 35px;
+  }
+  .paragraph {
+    font-size: 13.5px;
+  }
+  .img {
+    margin-bottom: 40px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .heading {
+    font-size: 35px;
+  }
+  .paragraph {
+    font-size: 12px;
+  }
+  .img {
+    margin-bottom: 40px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 476px) {
+  .heading {
+    font-size: 33px;
+  }
+  .paragraph {
+    font-size: 11px;
+  }
+  .img {
+    margin-bottom: 40px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 450px) {
+  .heading {
+    font-size: 31px;
+  }
+  .paragraph {
+    font-size: 10.6px;
+  }
+  .img {
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 460px) {
+  .smallHead {
+    font-size: 13px;
+  }
+  .heading {
+    font-size: 33px;
+  }
+  .paragraph {
+    font-size: 10px;
+  }
+  .img {
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 310px) {
+  .smallHead {
+    font-size: 13px;
+  }
+  .heading {
+    font-size: 30px;
+  }
+  .paragraph {
+    font-size: 10px;
+  }
+  .img {
+    margin-bottom: 30px;
+    margin-left: 30px;
+    width: 500px;
+  }
+}

@@ -1,0 +1,145 @@
+@media (max-width: 915px) {
+  .heading {
+    font-size: 45px;
+  }
+  .img {
+    width: 420px;
+  }
+}
+@media (max-width: 848px) {
+  .heading {
+    font-size: 42px;
+  }
+  .paragraph {
+    font-size: 15px;
+  }
+  .img {
+    width: 400px;
+  }
+}
+@media (max-width: 810px) {
+  .heading {
+    font-size: 42px;
+  }
+  .paragraph {
+    font-size: 15px;
+  }
+  .img {
+    width: 380px;
+  }
+}
+@media (max-width: 775px) {
+  .heading {
+    font-size: 40px;
+  }
+  .paragraph {
+    font-size: 13.5px;
+  }
+  .img {
+    width: 360px;
+  }
+}
+@media (max-width: 761px) {
+  .heading {
+    font-size: 40px;
+  }
+  .paragraph {
+    font-size: 13.5px;
+  }
+  .img {
+    width: 360px;
+  }
+  .info {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 572px) {
+  .heading {
+    font-size: 40px;
+  }
+  .paragraph {
+    font-size: 13.5px;
+  }
+  .img {
+    width: 320px;
+    margin-left: 80px;
+  }
+  .info {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 449px) {
+  .heading {
+    font-size: 40px;
+  }
+  .paragraph {
+    font-size: 13.5px;
+  }
+  .img {
+    width: 320px;
+    margin-left: 20px;
+  }
+  .info {
+    margin-right: 90px;
+  }
+}
+@media (max-width: 431px) {
+  .heading {
+    font-size: 35px;
+  }
+  .paragraph {
+    font-size: 13px;
+  }
+  .img {
+    width: 320px;
+    margin-left: 20px;
+  }
+  .info {
+    margin-right: 90px;
+  }
+}
+@media (max-width: 406px) {
+  .heading {
+    font-size: 33px;
+  }
+  .paragraph {
+    font-size: 12.5px;
+  }
+  .img {
+    width: 320px;
+    margin-left: 20px;
+  }
+  .info {
+    margin-right: 90px;
+  }
+}
+@media (max-width: 390px) {
+  .heading {
+    font-size: 30px;
+  }
+  .paragraph {
+    font-size: 12.5px;
+  }
+  .img {
+    width: 320px;
+    margin-left: 20px;
+  }
+  .info {
+    margin-right: 90px;
+  }
+}
+@media (max-width: 376px) {
+  .heading {
+    font-size: 40px;
+  }
+  .paragraph {
+    font-size: 14px;
+  }
+  .img {
+    width: 320px;
+    margin-left: 20px;
+  }
+  .info {
+    margin-right: 90px;
+  }
+}

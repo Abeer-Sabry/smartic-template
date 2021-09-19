@@ -1,0 +1,16 @@
+.close {
+  color: black;
+}
+.border {
+  background-color: rgb(209, 209, 209);
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 70px;
+}
+.direction {
+  flex-direction: column;
+  text-align: center;
+  transition: all ease 0.1;
+}

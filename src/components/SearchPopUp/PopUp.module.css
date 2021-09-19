@@ -1,0 +1,18 @@
+.icon {
+  content: "";
+  position: absolute;
+  top: 70px;
+  right: 30px;
+  color: rgb(58, 58, 58);
+  font-size: 17px;
+  display: block;
+}
+.close {
+  content: "";
+  position: absolute;
+  right: 50px;
+  display: block;
+  margin-bottom: 50px;
+  font-size: 20px;
+  color: black;
+}

@@ -1,0 +1,73 @@
+.background {
+  background-image: url("https://demo2wpopal.b-cdn.net/smartic/wp-content/uploads/2020/10/h8_shape-1.png");
+  background-position: 1090px 122px;
+  background-repeat: no-repeat;
+}
+.green,
+.red,
+.blue,
+.dark {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  line-height: 60px;
+  margin-bottom: 10px;
+}
+.green {
+  color: #b7da97;
+  background-color: #b7da975d;
+}
+.blue {
+  color: #7fcacd;
+  background-color: #7fcacd48;
+}
+.red {
+  color: #dfa2a9;
+  background-color: #dfa2a950;
+}
+.dark {
+  color: #99aedc;
+  background-color: #99aedc59;
+}
+.blue:hover,
+.red:hover,
+.green:hover,
+.dark:hover {
+  background: transparent;
+  transition: all ease 0.3s;
+}
+
+@media (max-width: 520px) {
+  .paragraph {
+    font-size: 20px;
+  }
+  .heading {
+    font-size: 40px;
+  }
+  .rows {
+    margin-left: 1px;
+  }
+}
+@media (max-width: 460px) {
+  .paragraph {
+    font-size: 23px;
+  }
+  .heading {
+    font-size: 45px;
+  }
+  .rows {
+    margin-left: 1px;
+  }
+}
+@media (max-width: 260px) {
+  .paragraph {
+    font-size: 23px;
+  }
+  .heading {
+    font-size: 40px;
+  }
+  .rows {
+    margin-left: 1px;
+  }
+}

@@ -1,0 +1,23 @@
+.dropstyle {
+  background-color: white !important;
+  color: black !important;
+}
+.CartBadge {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 17px;
+  background-color: #ff6f54;
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 11px;
+  padding: 0 3px;
+  border-radius: 25px;
+  z-index: -1;
+}
+@media (max-width: 360px) {
+  .nav {
+    padding: 10px 20px;
+  }
+}

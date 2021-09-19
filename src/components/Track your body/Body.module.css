@@ -1,0 +1,243 @@
+@media (max-width:1089px){
+    .img{
+        width:500px;
+    }
+}
+@media (max-width:1036px){
+    .img{
+        width:480px;
+    }
+}
+@media (max-width:991px){
+    .img{
+        width:460px;
+    }
+    .heading{
+        font-size:42px;
+    }
+    .paragraph{
+        font-size:16px;
+    }
+}
+@media (max-width:960px){
+    .img{
+        width:440px;
+    }
+    .heading{
+        font-size:40px;
+    }
+    .paragraph{
+        font-size:15.5px;
+    }
+}
+@media (max-width:920px){
+    .img{
+        width:420px;
+    }
+    .heading{
+        font-size:40px;
+    }
+    .paragraph{
+        font-size:15.5px;
+    }
+}
+@media (max-width:887px){
+    .img{
+        width:400px;
+    }
+    .heading{
+        font-size:38px;
+    }
+    .paragraph{
+        font-size:15px;
+    }
+}
+@media (max-width:840px){
+    .img{
+        width:380px;
+    }
+    .heading{
+        font-size:36px;
+    }
+    .paragraph{
+        font-size:14.5px;
+    }
+}
+@media (max-width:800px){
+    .img{
+        width:360px;
+    }
+    .heading{
+        font-size:34px;
+    }
+    .paragraph{
+        font-size:14px;
+    }
+}
+@media (max-width:766px){
+    .img{
+        width:500px;
+        margin-top: 50px;
+    }
+    .heading{
+        font-size:50px;
+        text-align: center;
+        margin-bottom:15px;
+    }
+    .paragraph{
+        font-size:18px;
+        text-align: center;
+    }
+}
+@media (max-width:567px){
+    .img{
+        width:500px;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    .heading{
+        font-size:50px;
+        text-align: center;
+        margin-bottom:15px;
+    }
+    .paragraph{
+        font-size:18px;
+        text-align: center;
+    }
+}
+@media (max-width:540px){
+    .img{
+        width:480px;
+        margin-top: 50px;
+    }
+    .heading{
+        font-size:48px;
+        text-align: center;
+        margin-bottom:15px;
+    }
+    .paragraph{
+        font-size:17px;
+        text-align: center;
+    }
+}
+@media (max-width:540px){
+    .img{
+        width:460px;
+        margin-top: 50px;
+    }
+    .heading{
+        font-size:46px;
+        text-align: center;
+        margin-bottom:15px;
+    }
+    .paragraph{
+        font-size:15px;
+        text-align: center;
+    }
+}
+@media (max-width:499px){
+    .img{
+        width:440px;
+        margin-top: 50px;
+    }
+    .heading{
+        font-size:44px;
+        text-align: center;
+        margin-bottom:15px;
+    }
+    .paragraph{
+        font-size:14px;
+        text-align: center;
+    }
+}
+@media (max-width:477px){
+    .img{
+        width:420px;
+        margin-top: 50px;
+    }
+    .heading{
+        font-size:42px;
+        text-align: center;
+        margin-bottom:15px;
+    }
+    .paragraph{
+        font-size:13px;
+        text-align: center;
+    }
+}
+@media (max-width:459px){
+    .img{
+        width:400px;
+        margin-top: 50px;
+    }
+    .heading{
+        font-size:41px;
+        text-align: center;
+        margin-bottom:15px;
+    }
+    .paragraph{
+        font-size:14px;
+        text-align: center;
+    }
+}
+@media (max-width:439px){
+    .img{
+        width:380px;
+        margin-top: 50px;
+    }
+    .heading{
+        font-size:40px;
+        text-align: center;
+        margin-bottom:15px;
+    }
+    .paragraph{
+        font-size:14px;
+        text-align: center;
+    }
+}
+
+@media (max-width:420px){
+    .img{
+        width:360px;
+        margin-top: 50px;
+    }
+    .heading{
+        font-size:38px;
+        text-align: center;
+        margin-bottom:15px;
+    }
+    .paragraph{
+        font-size:13px;
+        text-align: center;
+    }
+}
+@media (max-width:390px){
+    .img{
+        width:340px;
+        margin-top:20px;
+    }
+    .heading{
+        font-size:38px;
+        text-align: center;
+        margin-bottom:15px;
+    }
+    .paragraph{
+        font-size:13px;
+        text-align: center;
+    }
+}
+@media (max-width:377px){
+    .img{
+        width:320px;
+        margin-top:20px;
+    }
+    .heading{
+        font-size:36px;
+        text-align: center;
+        margin-bottom:15px;
+    }
+    .paragraph{
+        font-size:12px;
+        text-align: center;
+    }
+}
