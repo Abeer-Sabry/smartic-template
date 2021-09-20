@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar/Navbar.jsx';
-import { Switch, Route} from 'react-router';
+import { Switch, Route, Redirect } from 'react-router';
 import './App.css';
 import Home from './components/Home/Home.jsx';
 import Shop from './components/Shop/Shop.jsx';
@@ -13,7 +13,8 @@ const App = () => {
         <Route exact path="/home" component={Home} />
         <Route exact path="/Shop" component={Shop} />
         <Route path="/products/:productId" component={SingleProduct} />
-         
+        <Redirect exact from="/" to="/home" />
+
       </Switch >
     </div>
   );
