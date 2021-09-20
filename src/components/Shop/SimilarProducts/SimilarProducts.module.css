@@ -1,0 +1,15 @@
+.main{
+    border: 1px solid rgb(236, 236, 236);
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.heading{
+    font-size:13px;
+    margin: 0;
+}
+.icons{
+    font-size: 13px;
+    margin-right: 2px;
+}

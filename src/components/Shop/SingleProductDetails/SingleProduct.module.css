@@ -1,0 +1,71 @@
+.img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.FirstButton {
+  background-color: var(--main-color);
+  border: none;
+  padding: 3px 15px;
+  border-radius: 3px;
+  color: white;
+  margin-bottom: 10px;
+}
+.styleparagraph {
+  margin-right: 50px;
+  padding: 0;
+}
+.paragraph {
+  font-size: 12.5px;
+}
+.size {
+  margin-right: 20px;
+  font-weight: bold;
+}
+.sizeIcons {
+  font-size: 15px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid var(--main-color);
+  line-height: 35px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 7px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.qtyHeading {
+  margin-right: 20px;
+  font-weight: bold;
+}
+.Number {
+  background-color: var(--main-color);
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  margin-right: 13px;
+}
+.qtyNumber {
+  margin-right: 13px;
+  margin-bottom: 25px;
+}
+.CartButton{
+    background-color: var(--main-color);
+    border: none;
+    color: white;    
+    border-radius: 3px;
+    margin-right: 10px;
+    padding: 5px 15px;
+}
+.favrButton{
+    border: 2px solid var(--main-color);
+    background-color: transparent;
+    color: var(--main-color);
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 5px 10px;
+}

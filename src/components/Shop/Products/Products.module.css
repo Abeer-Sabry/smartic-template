@@ -1,0 +1,18 @@
+.main {
+  /* background-color: blue; */
+  text-align: center;
+  margin-bottom:70px;
+}
+.img {
+  width: 170px;
+}
+.heading {
+  font-size: 13px;
+}
+.paragraph{
+    font-size: 14px;
+}
+.DeletedText{
+  font-size: 12.5px;
+  margin-left: 5px;
+}

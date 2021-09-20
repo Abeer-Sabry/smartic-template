@@ -1,37 +1,20 @@
-
-import Navbar  from './components/Navbar/Navbar.jsx';
-import Header from './components/Header/Header.jsx';
-import Thermometer from './components/The Hosttest Thermometer/Thermometer.jsx';
-import Technology from './components/The coolest technology/Technology.jsx';
-import Ways from './components/2 ways of measurement/Ways.jsx';
-import Body from './components/Track your body/Body.jsx';
-import Batteries from './components/Batteries/Batteries.jsx';
-import Easy from './components/Easy to use/Easy.jsx';
-import Featured from './components/Featured/Featured.jsx';
-import Buy from './components/Buy Now/Buy.jsx';
-import Footer from './components/Footer/Footer.jsx';
+import Navbar from './components/Navbar/Navbar.jsx';
+import { Switch, Route} from 'react-router';
 import './App.css';
-import Reviews from './components/Reviews/Reviews.jsx';
-import PopUp from './components/SearchPopUp/PopUp';
-import CartPopUp from './components/CartPopUP/CartPopUp.jsx';
+import Home from './components/Home/Home.jsx';
+import Shop from './components/Shop/Shop.jsx';
+import SingleProduct from './components/Shop/SingleProductDetails/SingleProduct'
 
 const App = () => {
   return (
     <div className="App">
-      <PopUp/>
-      <CartPopUp/>
-      <Navbar/>
-      <Header/>
-      <Thermometer/>
-      <Technology/>
-      <Ways/>
-      <Body/>
-      <Batteries/>
-      <Easy/>
-      <Reviews/>
-      <Featured/>
-      <Buy/>
-      <Footer/>
+      <Navbar />
+      <Switch>
+        <Route exact path="/home" component={Home} />
+        <Route exact path="/Shop" component={Shop} />
+        <Route path="/products/:productId" component={SingleProduct} />
+         
+      </Switch >
     </div>
   );
 }

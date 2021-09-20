@@ -18,10 +18,10 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item ">
-                            <NavLink className="nav-link mr-4  " to="#">Home  <span className="plus"><i className="fas fa-plus"></i> </span></NavLink>
+                            <NavLink className="nav-link mr-4  " to="/home">Home  <span className="plus"><i className="fas fa-plus"></i> </span></NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link  mr-4" to="#">Shop <span className="plus"><i className="fas fa-plus"></i></span></NavLink>
+                            <NavLink className="nav-link  mr-4" to="/Shop">Shop <span className="plus"><i className="fas fa-plus"></i></span></NavLink>
                         </li>
                         <li className="nav-item dropdown">
                             <NavLink className="nav-link mr-4" to="#" id="navbarDropdown" data-toggle="dropdown"  >
