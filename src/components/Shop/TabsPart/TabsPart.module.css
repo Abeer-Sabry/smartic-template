@@ -1,0 +1,14 @@
+.anchor {
+  margin-right: 50px;
+}
+.active {
+  border-bottom: 1px solid red !important;
+  background-color: transparent !important;
+}
+.list {
+  display: inline-block;
+  margin-bottom: 25px;
+}
+th{
+    background-color: rgb(247, 247, 247);
+}

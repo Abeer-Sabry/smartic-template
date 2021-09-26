@@ -1,0 +1,21 @@
+.main {
+  border: none;
+  margin-bottom: 40px;
+}
+.card {
+  border: none;
+}
+.links {
+  font-size: 13px;
+  margin-left: 5px;
+}
+button {
+  border: none;
+  font-size: 14px;
+}
+.border{
+  border-bottom: 1px solid gray;
+}
+.arrow{
+  font-size: 15px;
+}

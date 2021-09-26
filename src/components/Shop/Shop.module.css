@@ -1,9 +1,46 @@
-/* .background{
-    background-color:rgb(247, 247, 247);
-} */
-
+.background {
+  background-color: rgb(245, 245, 245);
+  padding-top: 100px;
+}
+.mainBar {
+  margin-bottom: 50px;
+}
 .main {
   border: 1px solid rgb(219, 219, 219);
   text-align: center;
   border-radius: 3px;
+  padding-top: 20px;
+}
+/* .links{
+  text-decoration: none;
+} */
+.arrow {
+  font-size: 13px;
+}
+.CartBadge {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 17px;
+  background-color: #ff6f54;
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 11px;
+  padding: 0 3px;
+  border-radius: 25px;
+  z-index: -1;
+}
+input {
+  border-radius: 20px;
+  border: 1px solid var(--main-color);
+}
+.box{
+  background-color: rgb(226, 226, 226);
+  margin-bottom:30px;
+  padding: 13px ;
+  border-radius: 5px;
+}
+h4{
+  margin-bottom:20px;
 }

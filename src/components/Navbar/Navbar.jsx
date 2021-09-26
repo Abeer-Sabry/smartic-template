@@ -18,40 +18,16 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item ">
-                            <NavLink className="nav-link mr-4  " to="/home">Home  <span className="plus"><i className="fas fa-plus"></i> </span></NavLink>
+                            <NavLink className="nav-link mr-4  " to="/home">Home  </NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link  mr-4" to="/Shop">Shop <span className="plus"><i className="fas fa-plus"></i></span></NavLink>
+                            <NavLink className="nav-link  mr-4" to="/Shop">Shop </NavLink>
                         </li>
                         <li className="nav-item dropdown">
                             <NavLink className="nav-link mr-4" to="#" id="navbarDropdown" data-toggle="dropdown"  >
-                                Pages <span className="plus"><i className="fas fa-plus"></i></span>
+                                Contact 
                             </NavLink>
-                            <div className="dropdown-menu" >
-                                <NavLink className={`${NavStyle.dropstyle}  dropdown-item`} to="#">Action</NavLink>
-                                <NavLink className={`${NavStyle.dropstyle}  dropdown-item`} to="#">Another action</NavLink>
-                                <NavLink className={`${NavStyle.dropstyle}  dropdown-item`} to="#">Something else here</NavLink>
-                            </div>
-                        </li>
-                        <li className="nav-item dropdown ">
-                            <NavLink className="nav-link mr-4 " to="#" id="navbarDropdown" data-toggle="dropdown"  >
-                                Blog <span className="plus"><i className="fas fa-plus"></i></span>
-                            </NavLink>
-                            <div className="dropdown-menu" >
-                                <NavLink className={`${NavStyle.dropstyle}  dropdown-item`} to="#">Action</NavLink>
-                                <NavLink className={`${NavStyle.dropstyle}  dropdown-item`} to="#">Another action</NavLink>
-                                <NavLink className={`${NavStyle.dropstyle}  dropdown-item`} to="#">Something else here</NavLink>
-                            </div>
-                        </li>
-                        <li className="nav-item dropdown">
-                            <NavLink className="nav-link mr-4" to="#" id="navbarDropdown" data-toggle="dropdown"  >
-                                Contact <span className="plus"><i className="fas fa-plus"></i></span>
-                            </NavLink>
-                            <div className="dropdown-menu " >
-                                <NavLink className={`${NavStyle.dropstyle}  dropdown-item`} to="#">Action</NavLink>
-                                <NavLink className={`${NavStyle.dropstyle}  dropdown-item`} to="#">Another action</NavLink>
-                                <NavLink className={`${NavStyle.dropstyle}  dropdown-item`} to="#">Something else here</NavLink>
-                            </div>
+                          
                         </li>
 
                     </ul>

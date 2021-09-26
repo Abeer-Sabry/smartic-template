@@ -1,5 +1,7 @@
 .img{
-    width:110%;
+    width:100%;
+    padding: 0;
+    margin: 0;
 }
 .main{
     margin-bottom:20px;
@@ -7,21 +9,12 @@
 .heading{
     margin: 0;
     margin-top: 10px;
+    font-size: 13px;
 }
 .paragraph{
     margin: 0;
-    font-size: 12px;
+    font-size: 11.5px;
 }
 .price{
-    font-size: 13px;
-}
-.border{
-    content:"";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: rgb(224, 224, 224);
-    bottom: 0;
-    left: 0;
-    margin-bottom: 20px;
+    font-size: 12px;
 }

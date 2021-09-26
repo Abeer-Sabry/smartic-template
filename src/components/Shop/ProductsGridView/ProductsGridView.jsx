@@ -1,19 +1,17 @@
-import React from 'react'
-import { useEffect } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
-import fetchDataAction from '../../../Redux/FetchProducts/action'
-import Loader from '../../Loader/Loader'
-import ProductItem from '../ProductItem/ProductItem'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
+import fetchDataAction from '../../../Redux/FetchProducts/action';
+import Loader from '../../Loader/Loader';
+import ProductItem from '../ProductItem/ProductItem';
 
-const Products = () => {
+const ProductsGridView = () => {
     const { products, loading } = useSelector(({ products }) => products);
     const dispatch = useDispatch()
     useEffect(() => {
         dispatch(fetchDataAction())
     }, [dispatch])
-    console.log(products);
     return (
-        <>
+        <div>
             <div className="row">
                 {
                     loading ? <Loader /> :
@@ -27,8 +25,8 @@ const Products = () => {
                         ))
                 }
             </div>
-        </>
+        </div>
     )
 }
 
-export default Products
+export default ProductsGridView

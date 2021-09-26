@@ -6,12 +6,11 @@ const SingleProductAction = (productId) => async (dispatch) => {
         type: types.FETCH_DETAILS_REQUEST
     });
     try {
-        const {data} = await axios.get(`https://naga-electron.herokuapp.com/api/v1/products/60e99a2ec7fb14280861343a`)
-        const SingleProduct =data.product
+        const {data} = await axios.get(`https://naga-electron.herokuapp.com/api/v1/products/${productId}`)
         console.log(data);
         dispatch({
             type: types.FETCH_DETAILS_SUCCESS,
-            payload:  SingleProduct
+            payload:  data.product
         })
     } catch (err) {
         dispatch({

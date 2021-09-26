@@ -1,13 +1,15 @@
 .main{
-    border: 1px solid rgb(236, 236, 236);
-    border-radius: 10px;
+    border-bottom: 1px solid rgb(236, 236, 236) ;
     margin: 0;
-    padding: 0;
+    padding:20px 10px;   
 }
-
+.mainBorder{
+     border: 1px solid rgb(236, 236, 236);
+     border-radius:7px;
+}
 .heading{
     font-size:13px;
-    margin: 0;
+    margin-bottom:3px;
 }
 .icons{
     font-size: 13px;

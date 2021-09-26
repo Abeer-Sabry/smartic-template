@@ -1,52 +1,141 @@
 import React from 'react'
-// import { NavLink } from 'react-router-dom'
-
+import { NavLink } from 'react-router-dom'
+import style from './Accordion.module.css'
 const Accordion = () => {
     return (
         <>
-            <div className="accordion" id="accordionExample">
-                <div className="card">
-                    <div class="card-header" id="headingOne">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Collapsible Group Item #1
-                            </button>
+            
+            <h4 className="text-left border-bottom pb-3 mb-3">Categories</h4>
+            <div className={`${style.main}    accordion`} id="accordionExample">
+                <div className={`${style.card} border-bottom pb-1 mb-2 `}>
+                    <div className="" id="headingOne">
+                        <h2 className="mb-1">
+                            <div className="row">
+                                <button className=" col-md-6 bg-transparent border-none  btn-block text-left  " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Accessories
+                                </button>
+                                <span className={`${style.arrow}  col-md-5  d-inline-block  ml-1`}><i className="fas fa-angle-down"></i></span>
+                            </div>
                         </h2>
                     </div>
-
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                        <div class="card-body">
-                            Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
+                    <div id="collapseOne" className="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div className="">
+                            <ul>
+                                <li>
+                                    <NavLink className={`${style.links}  d-block text-left text`} to="/">Cameras</NavLink>
+                                    <NavLink className={`${style.links}  d-block text-left text`} to="/">Software</NavLink>
+                                    <NavLink className={`${style.links}  d-block text-left text`} to="/">Phones & PDAs </NavLink>
+                                    <NavLink className={`${style.links}  d-block text-left text mb-3`} to="/">MP3 Players</NavLink>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div className="card">
-                    <div class="card-header" id="headingTwo">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Collapsible Group Item #2
-                            </button>
+                <div className={`${style.card} border-bottom pb-1 mb-2  `}>
+                    <div className="" id="headingTwo">
+                        <h2 className="mb-1">
+                            <div className="row">
+                                <button className=" col-md-6 bg-transparent border-none  btn-block text-left  " type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    All in One
+                                </button>
+                                <span className={`${style.arrow}  col-md-5  d-inline-block  ml-1`}><i className="fas fa-angle-down"></i></span>
+                            </div>
                         </h2>
                     </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                        <div class="card-body">
-                            Some placeholder content for the second accordion panel. This panel is hidden by default.
+                    <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div className="">
+                            <ul>
+                                <li>
+                                    <NavLink className={`${style.links}  d-block text-left text`} to="/">Cameras</NavLink>
+                                    <NavLink className={`${style.links}  d-block text-left text`} to="/">Software</NavLink>
+                                    <NavLink className={`${style.links}  d-block text-left text`} to="/">Phones & PDAs </NavLink>
+                                    <NavLink className={`${style.links}  d-block text-left text mb-3`} to="/">MP3 Players</NavLink>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div className="card">
-                    <div class="card-header" id="headingThree">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Collapsible Group Item #3
+                <div className={`${style.card} border-bottom pb-1 mb-2  `}>
+                    <div className="" id="headingThree">
+                        <h2 className="mb-1">
+                            <div className="row">
+                                <button className=" col-md-6 bg-transparent border-none  btn-block text-left  " type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                    Gadgets
+                                </button>
+                                <span className={`${style.arrow}  col-md-5  d-inline-block  ml-1`}><i className="fas fa-angle-down"></i></span>
+                            </div>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" className="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div className="">
+                            <ul>
+                                <li>
+                                    <NavLink className={`${style.links}  d-block text-left text`} to="/">Cameras</NavLink>
+                                    <NavLink className={`${style.links}  d-block text-left text`} to="/">Software</NavLink>
+                                    <NavLink className={`${style.links}  d-block text-left text`} to="/">Phones & PDAs </NavLink>
+                                    <NavLink className={`${style.links}  d-block text-left text mb-3`} to="/">MP3 Players</NavLink>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div className={`${style.card} border-bottom pb-1 mb-2  `}>
+                    <div className="" id="headingFour">
+                        <h2 className="mb-1">
+                            <div className="row">
+                                <button className=" col-md-6 bg-transparent border-none  btn-block text-left  " type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    Gaming
+                                </button>
+                                <span className={`${style.arrow}  col-md-5  d-inline-block  ml-1`}><i className="fas fa-angle-down"></i></span>
+                            </div>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" className="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                        <div className="">
+                            <ul>
+                                <li>
+                                    <NavLink className={`${style.links}  d-block text-left text`} to="/">Cameras</NavLink>
+                                    <NavLink className={`${style.links}  d-block text-left text`} to="/">Software</NavLink>
+                                    <NavLink className={`${style.links}  d-block text-left text`} to="/">Phones & PDAs </NavLink>
+                                    <NavLink className={`${style.links}  d-block text-left text mb-3`} to="/">MP3 Players</NavLink>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div className={`${style.card} border-bottom pb-1 mb-2  `}>
+                    <div className="" id="headingFive">
+                        <h2 className="mb-1">
+                            <div className="row">
+                                <button className=" col-md-6 bg-transparent border-none  btn-block text-left  " type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                    Others
+                                </button>
+                                <span className={`${style.arrow}  col-md-5  d-inline-block  ml-1`}><i className="fas fa-angle-down"></i></span>
+                            </div>
+                        </h2>
+                    </div>
+                    <div id="collapseFive" className="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                        <div className="">
+                            <ul>
+                                <li>
+                                    <NavLink className={`${style.links}  d-block text-left text`} to="/">Cameras</NavLink>
+                                    <NavLink className={`${style.links}  d-block text-left text`} to="/">Software</NavLink>
+                                    <NavLink className={`${style.links}  d-block text-left text`} to="/">Phones & PDAs </NavLink>
+                                    <NavLink className={`${style.links}  d-block text-left text mb-3`} to="/">MP3 Players</NavLink>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div className={`${style.card} border-bottom pb-1 mb-2  `}>
+                    <div className="" id="headingSix">
+                        <h2 className="mb-1">
+                            <button className="bg-transparent border-none btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                MAC Computer  
                             </button>
                         </h2>
                     </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                        <div class="card-body">
-                            And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
-                        </div>
-                    </div>
+                  
                 </div>
             </div>
         </>

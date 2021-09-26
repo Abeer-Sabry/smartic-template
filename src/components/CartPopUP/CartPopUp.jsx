@@ -8,7 +8,7 @@ import Aos from 'aos'
 
 const CartPopUp = () => {
     Aos.init({
-        duration: 250
+        duration:2000
     });
     const { show } = useSelector(({ show }) => show)
     const dispatch = useDispatch()
