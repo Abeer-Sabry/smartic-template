@@ -8,7 +8,7 @@ import TextError from "../Forms/TextError";
 
 const UserLogin = () => {
     const dispatch = useDispatch();
-    const { loading, err } = useSelector(({ user }) => user);
+    const { loading } = useSelector(({ user }) => user);
     const initialValues = {
         email: "",
         password: "",

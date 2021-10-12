@@ -11,6 +11,7 @@ import Contact from './components/Contact/Contact.jsx';
 import { useSelector } from 'react-redux'
 import FormikContainer from './components/Forms/FormikContainer.jsx';
 
+
 const App = () => {
   const { userInfo } = useSelector(({ user }) => user)
   // console.log(userInfo);
@@ -24,13 +25,16 @@ const App = () => {
         <Route exact path="/products/:productId" component={SingleProduct} />
         <Route exact path="/cartpage" component={CartPage} />
         <Route exact path="/userlogin" render={() => userInfo?.token ? <Redirect to="/home" /> : <UserLogin />} />
-        <Route exact path="/userregister" render={() => userInfo?.token? <Redirect to="/home" /> : <UserRegister />} />
+        <Route exact path="/userregister" render={() => userInfo?.token ? <Redirect to="/home" /> : <UserRegister />} />
         {/* <Route exact path="/userregister" component={UserRegister} /> */}
         <Redirect exact from="/" to="/home" />
-        <FormikContainer/>
+        <FormikContainer />
       </Switch >
+
+
+
     </div>
   );
-}
+};
 
 export default App;

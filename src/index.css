@@ -13,6 +13,7 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 li {
   list-style: none;
@@ -152,6 +153,7 @@ h1 {
 .image-gallery-play-button {
   display: none;
 }
+
 .image-gallery-thumbnails {
   display: flex;
   flex-direction: column;
@@ -165,6 +167,10 @@ h1 {
 .errMessage {
   font-size: 12px;
 }
+
+
+
+
 
 
 
