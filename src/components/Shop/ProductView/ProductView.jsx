@@ -5,6 +5,8 @@ import ProductsListView from '../ProductsListView/ProductsListView'
 
 const ProductView = () => {
     const { gridView } = useSelector(({ view }) => view)
+    
+
     return (
         <>
             {

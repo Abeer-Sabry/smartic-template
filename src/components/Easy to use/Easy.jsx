@@ -36,7 +36,7 @@ const Easy = () => {
                             </div>
                         </div>
                         <div className="col-md-6">
-                            <img className={style.img} data-aos="zoom-in" src="https://demo2wpopal.b-cdn.net/smartic/wp-content/uploads/2020/10/h8_layer4.png" alt="" />
+                            <img className={`${style.img}  w-100`} data-aos="zoom-in" src="https://news-cdn.softpedia.com/images/news2/Toshiba-s-4K-Laptop-Arrives-April-22-with-1-500-1-087-Price-Tag-437769-3.jpg" alt="" />
                         </div>
                     </div>
                 </div>

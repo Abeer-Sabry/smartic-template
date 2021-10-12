@@ -1,31 +1,44 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 // import style from './LatestProducts.module.css'
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
-import { useSelector } from 'react-redux';
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
+import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import fetchDataAction from '../../../Redux/FetchProducts/action';
+import ProductItem from '../ProductItem/ProductItem';
+import style from './LatestProducts.module.css'
 
 
 const LatestProducts = () => {
+    const dispatch = useDispatch()
     const { products } = useSelector(({ products }) => products);
 
-    return (
-        <>
-            <OwlCarousel className='owl-theme' loop margin={10}
-             navText={true}
-             items='1'
-             >
-                <div className='item'>
-                    {products.map(product => (
-                        <div key={product.id}>
-                            <img src={product.image} alt="" />
-                        </div>
-                    ))}
-                </div>
+    const items = products.map(({ _id, category, name, image, price }) => (
+        <div key={_id}>
+            <h6 className={`${style.heading}  text`}>{category}</h6>
+            <Link to={`/products/${_id}`}>
+                <p className={style.paragraph}>{name}</p>
+                <img className={style.img} src={image} alt="" />
+            </Link>
+            <p>
+                ${price} <del className={`${style.DeletedText}  deleted`}>$300</del>{" "}
+            </p>
+        </div>
+    ))
 
-            </OwlCarousel>
-        </>
-    )
+useEffect(() => {
+    dispatch(fetchDataAction());
+}, [dispatch]);
+return (
+    <>
+        <AliceCarousel items={items}
+            disableDotsControls
+            disableButtonsControls
+            autoPlay
+            animationDuration={1500}
+        />
+    </>
+)
 }
 
 export default LatestProducts

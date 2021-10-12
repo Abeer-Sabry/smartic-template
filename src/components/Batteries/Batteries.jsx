@@ -12,7 +12,8 @@ const Batteries = () => {
                 <div className="container">
                     <div className="row align-items-center justify-content-center ">
                         <div className="col-md-6">
-                            <img className={style.img} data-aos="zoom-in" src="https://demo2wpopal.b-cdn.net/smartic/wp-content/uploads/2020/10/h8_layer3.png" alt="" />
+                            <img className={`${style.img}    `} data-aos="zoom-in" src="https://cdn.unifyhealthlabs.com/wp-content/uploads/2019/12/manlisteningtomusic.jpg" alt="" />
+                            {/* <img className={style.img} data-aos="zoom-in" src="https://demo2wpopal.b-cdn.net/smartic/wp-content/uploads/2020/10/h8_layer3.png" alt="" /> */}
                         </div>
                         <div data-aos="fade-up" className="col-md-6">
                             <h1 className={style.heading}>Batteries last <br /> up to 2 years</h1>

@@ -1,10 +1,12 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import NavStyle from './Navbar.module.css'
-import { useDispatch } from 'react-redux'
+// import NavStyle from './Navbar.module.css'
+import { useDispatch, useSelector } from 'react-redux'
 import PopUpAction from '../../Redux/Popup/actions'
-import CartPopUpAction from '../../Redux/CartPopUp/action'
+import CartButton from '../CartButton/CartButton'
+import { userLogOut } from '../../Redux/User/action'
 const Navbar = () => {
+    const { isLogginIn, userInfo } = useSelector(({ user }) => user)
     const dispatch = useDispatch()
 
     return (
@@ -23,30 +25,35 @@ const Navbar = () => {
                         <li className="nav-item">
                             <NavLink className="nav-link  mr-4" to="/Shop">Shop </NavLink>
                         </li>
-                        <li className="nav-item dropdown">
-                            <NavLink className="nav-link mr-4" to="#" id="navbarDropdown" data-toggle="dropdown"  >
-                                Contact 
-                            </NavLink>
-                          
+                        <li className="nav-item ">
+                            <NavLink className="nav-link mr-4" to="/contact">Contact</NavLink>
+
                         </li>
 
                     </ul>
                     <ul className="navbar-nav ml-auto">
-                        <li className="nav-item">
-                            <NavLink className="anchor" to="#">Login / </NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink className="anchor mr-3" to="#">Register</NavLink>
-                        </li>
+                        {isLogginIn ?
+                            <li className="nav-item">
+                                <NavLink onClick={() => dispatch(userLogOut())} className="anchor mr-3" to="/userlogin">Logout</NavLink>
+                            </li>
+                            // <li className="nav-item">
+                            //     <NavLink onClick={() => dispatch(userLogOut())} className="anchor mr-3" to="/userlogin">{userInfo.name}</NavLink>
+                            // </li>
+                            :
+                            <>
+                                <li className="nav-item">
+                                    <NavLink className="anchor" to="/userlogin">Login / </NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink className="anchor mr-3" to="/userregister">Register</NavLink>
+                                </li>
+
+                            </>
+                        }
                         <li className="nav-item">
                             <NavLink onClick={() => dispatch(PopUpAction())} className="icons mr-3" to="#"><i className="fas fa-search-location"></i></NavLink>
                         </li>
-                        <li className="nav-item  position-relative">
-                            <NavLink onClick={() => dispatch(CartPopUpAction())} className="icons mr-3" to="#">
-                                <i className="fas fa-cart-arrow-down"></i>
-                                <span className={`${NavStyle.CartBadge}   `}>0</span>
-                            </NavLink>
-                        </li>
+                        <CartButton />
                         <li className="nav-item">
                             <NavLink className="icons " to="#"><i className="fas fa-grip-lines"></i></NavLink>
                         </li>

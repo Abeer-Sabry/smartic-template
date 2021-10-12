@@ -4,8 +4,8 @@
   top: 0;
   right: 0;
 }
-.heading {
-  font-size: 48px;
+.heading ,.heading span{
+  font-size: 47px;
 }
 @media (max-width: 988px) {
   .img {

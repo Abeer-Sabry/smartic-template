@@ -1,12 +1,14 @@
 import Types from "./type"
 import axios from "axios"
-const fetchDataAction = () => async (dispatch) => {
+const fetchDataAction = (params) => async (dispatch) => {
     dispatch({
         type: Types.FETCH_DATA_REQUEST
     })
-
+    // Query params
+    // [lte] => less than or equal
+    // [gte] => greater than or equal
     try {
-        const  products  = await axios.get(`https://naga-electron.herokuapp.com/api/v1/products`)
+        const products = await axios.get(`https://naga-electron.herokuapp.com/api/v1/products`, { params })
         const allproducts = products.data.products
         dispatch({
             type: Types.FETCH_DATA_SUCCESS,

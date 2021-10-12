@@ -4,7 +4,10 @@
 .paragraph {
   font-size: 17px;
 }
-
+.img{
+  width: 90%;
+  border-radius: 10px;
+}
 @media (max-width: 1199px) {
   .img {
     width: 500px;

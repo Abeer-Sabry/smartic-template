@@ -11,7 +11,7 @@ const Products = () => {
     useEffect(() => {
         dispatch(fetchDataAction())
     }, [dispatch])
-    console.log(products);
+    // console.log(products);
     return (
         <>
             <div className="row">

@@ -1,3 +1,6 @@
+.heading span{
+    font-size: 46px;
+}
 @media (max-width:1089px){
     .img{
         width:500px;

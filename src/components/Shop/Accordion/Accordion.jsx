@@ -10,11 +10,11 @@ const Accordion = () => {
                 <div className={`${style.card} border-bottom pb-1 mb-2 `}>
                     <div className="" id="headingOne">
                         <h2 className="mb-1">
-                            <div className="row">
-                                <button className=" col-md-6 bg-transparent border-none  btn-block text-left  " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <div className="d-flex jsutify-content-between">
+                                <button className="color bg-transparent border-none  btn-block text-left  " type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     Accessories
                                 </button>
-                                <span className={`${style.arrow}  col-md-5  d-inline-block  ml-1`}><i className="fas fa-angle-down"></i></span>
+                                <span className={`${style.arrow}  color  d-inline-block  ml-1`}><i className="fas fa-angle-down"></i></span>
                             </div>
                         </h2>
                     </div>
@@ -33,12 +33,12 @@ const Accordion = () => {
                 </div>
                 <div className={`${style.card} border-bottom pb-1 mb-2  `}>
                     <div className="" id="headingTwo">
-                        <h2 className="mb-1">
-                            <div className="row">
-                                <button className=" col-md-6 bg-transparent border-none  btn-block text-left  " type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        <h2 className="mb-1 ">
+                            <div className="d-flex jsutify-content-between">
+                                <button className=" color bg-transparent border-none  btn-block text-left  " type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                                     All in One
                                 </button>
-                                <span className={`${style.arrow}  col-md-5  d-inline-block  ml-1`}><i className="fas fa-angle-down"></i></span>
+                                <span className={`${style.arrow}  color d-inline-block  ml-1`}><i className="fas fa-angle-down"></i></span>
                             </div>
                         </h2>
                     </div>
@@ -58,11 +58,11 @@ const Accordion = () => {
                 <div className={`${style.card} border-bottom pb-1 mb-2  `}>
                     <div className="" id="headingThree">
                         <h2 className="mb-1">
-                            <div className="row">
-                                <button className=" col-md-6 bg-transparent border-none  btn-block text-left  " type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            <div className="d-flex jsutify-content-between">
+                                <button className=" color bg-transparent border-none  btn-block text-left  " type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                                     Gadgets
                                 </button>
-                                <span className={`${style.arrow}  col-md-5  d-inline-block  ml-1`}><i className="fas fa-angle-down"></i></span>
+                                <span className={`${style.arrow}   color  d-inline-block  ml-1`}><i className="fas fa-angle-down"></i></span>
                             </div>
                         </h2>
                     </div>
@@ -82,11 +82,11 @@ const Accordion = () => {
                 <div className={`${style.card} border-bottom pb-1 mb-2  `}>
                     <div className="" id="headingFour">
                         <h2 className="mb-1">
-                            <div className="row">
-                                <button className=" col-md-6 bg-transparent border-none  btn-block text-left  " type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            <div className="d-flex jsutify-content-between">
+                                <button className="color bg-transparent border-none  btn-block text-left  " type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
                                     Gaming
                                 </button>
-                                <span className={`${style.arrow}  col-md-5  d-inline-block  ml-1`}><i className="fas fa-angle-down"></i></span>
+                                <span className={`${style.arrow}  color  d-inline-block  ml-1`}><i className="fas fa-angle-down"></i></span>
                             </div>
                         </h2>
                     </div>
@@ -106,11 +106,11 @@ const Accordion = () => {
                 <div className={`${style.card} border-bottom pb-1 mb-2  `}>
                     <div className="" id="headingFive">
                         <h2 className="mb-1">
-                            <div className="row">
-                                <button className=" col-md-6 bg-transparent border-none  btn-block text-left  " type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                            <div className="d-flex jsutify-content-between">
+                                <button className=" color bg-transparent border-none  btn-block text-left  " type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
                                     Others
                                 </button>
-                                <span className={`${style.arrow}  col-md-5  d-inline-block  ml-1`}><i className="fas fa-angle-down"></i></span>
+                                <span className={`${style.arrow}  color  d-inline-block  ml-1`}><i className="fas fa-angle-down"></i></span>
                             </div>
                         </h2>
                     </div>
@@ -130,7 +130,7 @@ const Accordion = () => {
                 <div className={`${style.card} border-bottom pb-1 mb-2  `}>
                     <div className="" id="headingSix">
                         <h2 className="mb-1">
-                            <button className="bg-transparent border-none btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <button className=" color bg-transparent border-none btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                                 MAC Computer  
                             </button>
                         </h2>

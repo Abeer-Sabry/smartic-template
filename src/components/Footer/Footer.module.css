@@ -4,6 +4,7 @@
 
 .size {
   font-size: 23px;
+  color: var(--main-color2);
 }
 .color {
   color: rgb(14, 14, 14);
@@ -19,6 +20,7 @@
   line-height: 50px;
   text-align: center;
   border-radius: 50%;
+  font-size: 20px;
 }
 .color:hover {
   color: var(--main-color);

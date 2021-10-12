@@ -28,7 +28,9 @@ const Home = () => {
             <Reviews />
             <Featured />
             <Buy />
-            <Footer />
+           <div className="container-fluids">
+           <Footer />
+           </div>
         </>
     )
 }

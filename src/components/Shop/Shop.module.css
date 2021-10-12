@@ -1,5 +1,5 @@
 .background {
-  background-color: rgb(245, 245, 245);
+ 
   padding-top: 100px;
 }
 .mainBar {
@@ -32,11 +32,11 @@
   z-index: -1;
 }
 input {
-  border-radius: 20px;
-  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  border: 1px solid rgb(180, 180, 180);
 }
 .box{
-  background-color: rgb(226, 226, 226);
+  border: 1px solid var(--main-color);
   margin-bottom:30px;
   padding: 13px ;
   border-radius: 5px;

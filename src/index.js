@@ -8,15 +8,18 @@ import "@fortawesome/fontawesome-free/css/all.min.css"
 import './index.css';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
-import {Provider} from 'react-redux'
-import stroe from './Redux/store';
+import { Provider } from 'react-redux'
+import { stroe, persistor } from './Redux/store';
+import { PersistGate } from 'redux-persist/integration/react';
 
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Provider store={stroe}>
-      <App />
+        <PersistGate persistor={persistor}>
+          <App />
+        </PersistGate>
       </Provider>
     </BrowserRouter>
   </React.StrictMode>,
