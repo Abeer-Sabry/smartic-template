@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from "react-redux";
 import addToCartAction from "../../../Redux/Cart/action";
 import fetchDataAction from "../../../Redux/FetchProducts/action";
 import Loader from "../../Loader/Loader";
-import ProductItem from "../ProductItem/ProductItem";
 import style from "./ProductsListView.module.css";
 const ProductsListView = () => {
     const { products, loading } = useSelector(({ products }) => products);

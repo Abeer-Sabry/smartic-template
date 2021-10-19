@@ -1,5 +1,5 @@
 import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { NavLink } from 'react-router-dom'
 // import CartPopUpAction from '../../Redux/CartPopUp/action'
 import NavStyle from '../Navbar/Navbar.module.css'
