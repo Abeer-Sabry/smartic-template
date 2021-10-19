@@ -4,6 +4,7 @@ import storage from "redux-persist/lib/storage";
 import CartReducer from "./Cart/CartReducer";
 import CartPopUpReducer from "./CartPopUp/CartPopUpReducer";
 import fetchDateReducer from "./FetchProducts/fetchDateReducer";
+import ModalReducer from "./Modal/ModalReducer";
 import PopUpReducer from "./Popup/PopUpReducer";
 import PriceFilterReducer from "./PriceFilter/PriceFilterReducer";
 import ProductViewReducer from "./ProductView/ProductViewReducer";
@@ -14,7 +15,7 @@ import userReducer from "./User/userReducer";
 const persistConfig = {
     key: 'root',
     storage,
-    whitelist: ['cart','user']
+    whitelist: ['cart', 'user']
 };
 const rootReducer = combineReducers({
     popup: PopUpReducer,
@@ -25,7 +26,8 @@ const rootReducer = combineReducers({
     priceFilter: PriceFilterReducer,
     Search: SearchReducer,
     cart: CartReducer,
-    user:userReducer
+    user: userReducer,
+    modal: ModalReducer
 })
 
 export default persistReducer(persistConfig, rootReducer)

@@ -6,7 +6,7 @@ import PopUpAction from '../../Redux/Popup/actions'
 import CartButton from '../CartButton/CartButton'
 import { userLogOut } from '../../Redux/User/action'
 const Navbar = () => {
-  const { isLogginIn } = useSelector(({ user }) => user)
+  const { isLogginIn, userInfo } = useSelector(({ user }) => user)
   const dispatch = useDispatch()
 
   return (
@@ -31,34 +31,35 @@ const Navbar = () => {
             </li>
 
           </ul>
-        </div>
-        <ul className="navbar-nav ml-auto">
-          {isLogginIn ?
-            <li className="nav-item">
-              <NavLink onClick={() => dispatch(userLogOut())} className="anchor mr-3" to="/userlogin">Logout</NavLink>
-            </li>
-            // <li className="nav-item">
-            //     <NavLink onClick={() => dispatch(userLogOut())} className="anchor mr-3" to="/userlogin">{userInfo.name}</NavLink>
-            // </li>
-            :
-            <>
-              <li className="nav-item">
-                <NavLink className="anchor" to="/userlogin">Login / </NavLink>
+          <ul className="navbar-nav ml-auto">
+            {isLogginIn ?
+              <li className="nav-item Drop">
+                <NavLink className="anchor mr-3 " to="/userlogin">{userInfo.name}</NavLink>
+                <ul className="dropdown">
+                  <li><NavLink onClick={() => dispatch(userLogOut())} className="Dropanchor mr-3 " to="/userlogin">Logout</NavLink></li>
+                </ul>
               </li>
-              <li className="nav-item">
-                <NavLink className="anchor mr-3" to="/userregister">Register</NavLink>
-              </li>
+              :
+              <>
+                <li className="nav-item">
+                  <NavLink className="anchor" to="/userlogin">Login / </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="anchor mr-3" to="/userregister">Register</NavLink>
+                </li>
 
-            </>
-          }
-          <li className="nav-item">
-            <NavLink onClick={() => dispatch(PopUpAction())} className="icons mr-3" to="#"><i className="fas fa-search-location"></i></NavLink>
-          </li>
-          <CartButton />
-          <li className="nav-item">
-            <NavLink className="icons " to="#"><i className="fas fa-grip-lines"></i></NavLink>
-          </li>
-        </ul>
+              </>
+            }
+            <li className="nav-item">
+              <NavLink onClick={() => dispatch(PopUpAction())} className="icons mr-3" to="#"><i className="fas fa-search-location"></i></NavLink>
+            </li>
+            <CartButton />
+            <li className="nav-item">
+              <NavLink className="icons " to="#"><i className="fas fa-grip-lines"></i></NavLink>
+            </li>
+          </ul>
+        </div>
+
       </nav>
     </div>
   );

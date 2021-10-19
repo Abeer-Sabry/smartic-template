@@ -8,7 +8,6 @@ const userRegisterAction = (values) => async (dispatch) => {
         type: usertypes.USER_REGISTER_REQUEST
     })
     try {
-        // const res = await axios.post('https://route-egypt-api.herokuapp.com/signup', values)
         const res = await axios.post(' https://naga-electron.herokuapp.com/api/v1/users/signup ', values)
         console.log(res)
         dispatch({
@@ -31,8 +30,8 @@ export const userLoginAction = (values) => async (dispatch) => {
     })
 
     try {
-        const { data } = await axios.post('https://naga-electron.herokuapp.com/api/v1/users/login',values)
-        // const { data } = await axios.post('https://route-egypt-api.herokuapp.com/signin', userLogin)
+        const { data } = await axios.post('https://naga-electron.herokuapp.com/api/v1/users/login', values)
+        console.log(data)
         dispatch({
             type: usertypes.USER_LOGIN_SUCCESS,
             payload: data
@@ -47,4 +46,7 @@ export const userLoginAction = (values) => async (dispatch) => {
 // USER_LOGOUT_ACTION
 export const userLogOut = () => ({
     type: usertypes.USER_LOGOUT,
+})
+export const clearToken = () => ({
+    type: usertypes.CLEAR_TOKEN,
 })

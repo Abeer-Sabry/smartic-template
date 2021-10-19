@@ -12,6 +12,8 @@ import ImageGallery from 'react-image-gallery'
 import TabsPart from '../TabsPart/TabsPart'
 import IncrementButton from '../IncrementButton/IncrementButton'
 import DecrementButton from '../DecrementButton/DecrementButton'
+import Modal from '../Modal/Modal'
+import modalAction from '../../../Redux/Modal/action'
 
 const SingleProduct = () => {
   const { productId } = useParams()
@@ -22,7 +24,6 @@ const SingleProduct = () => {
   useEffect(() => {
     dispatch(SingleProductAction(productId))
   }, [dispatch, productId])
-
   return (
     <>
       <div className="container-fluids">
@@ -58,15 +59,17 @@ const SingleProduct = () => {
                     </div>
                     <div className="d-flex align-items-baseline">
                       <h6 className={style.qtyHeading}>QTY</h6>
-                      < DecrementButton />
-                      <span className={style.qtyNumber}>0{product.qty}</span>
+                      < DecrementButton product={product} />
+                      <span className={style.qtyNumber}>0</span>
                       <IncrementButton product={product} />
+                      <span onClick={()=>dispatch(modalAction())}><i className="fas fa-eye"></i></span>
                     </div>
                     <div className="d-flex">
                       <button onClick={() => dispatch(addToCartAction(product))} className={style.CartButton}>Add To Cart</button>
                       <button className={style.favrButton}><i class="fas fa-heart"></i> Add to Favorite</button>
                     </div>
                   </div>
+                  
                 </div>
                 <TabsPart />
               </div>
@@ -84,6 +87,7 @@ const SingleProduct = () => {
 
 
         <TopSeller />
+        <Modal product={product} />
       </div>
 
 

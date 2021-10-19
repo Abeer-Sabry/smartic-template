@@ -32,7 +32,7 @@ const validationSchema = Yup.object({
 
 const UserRegister = () => {
   const dispatch = useDispatch();
-  const { loading, err } = useSelector(({ user }) => user)
+  const { loading } = useSelector(({ user }) => user)
 
   return (
     <>
@@ -112,7 +112,7 @@ const UserRegister = () => {
                       className="bg-color button text-white px-4 py-2"
                       type="submit"
                     >
-                      {!loading ? "Loading" : 'Register'}
+                      {loading ? "Loading" : 'Register'}
                     </button>
                   </div>
                 </Form>

@@ -64,7 +64,7 @@ const UserLogin = () => {
                                             type="submit"
                                             className="px-3 py-2 button bg-color text-white"
                                         >
-                                            {!loading ? 'loading' : 'Login'}
+                                            {loading ? 'loading' : 'Login'}
                                         </button>
                                     </div>
                                 </Form>

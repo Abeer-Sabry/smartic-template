@@ -13,7 +13,7 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+  position: relative;
 }
 li {
   list-style: none;
@@ -36,7 +36,7 @@ code {
 }
 :root {
   /* --main-color: #deaa71; */
-  --main-color: #2046A1;
+  --main-color: #2046a1;
   --main-bg-color: #000;
   --main-color2: #ff6f54;
   /* --main-color:#007bff; */
@@ -50,9 +50,8 @@ code {
 .text {
   color: rgb(94, 94, 94);
 }
-.text2{
+.text2 {
   color: rgb(190, 190, 190);
-
 }
 .section {
   padding: 100px 0;
@@ -102,7 +101,7 @@ h1 {
 .plus i {
   font-size: 12px;
 }
-.button{
+.button {
   border-radius: 7px;
 }
 .popUpWhite {
@@ -110,6 +109,8 @@ h1 {
   width: 100%;
   background-color: rgb(255, 255, 255);
   position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -125,6 +126,34 @@ h1 {
   z-index: 999;
 }
 /* Navbar styling */
+.Drop {
+  position: relative;
+  overflow: hidden;
+}
+.dropdown {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: -10px;
+  opacity: 0;
+  padding: 1px 7px;
+  border-radius: 7px;
+  background-color: rgb(211, 0, 0);
+
+  /* display: none; */
+}
+.dropdown .Dropanchor {
+  color: white;
+  font-size: 14px;
+}
+.Drop:hover {
+  overflow: visible;
+}
+.Drop:hover .dropdown {
+  /* display: block; */
+  opacity: 1;
+  transition: all ease 1s;
+}
 .input {
   margin-top: 60px;
 }
@@ -167,10 +196,30 @@ h1 {
 .errMessage {
   font-size: 12px;
 }
-
-
-
-
-
-
-
+/* modal styling */
+.modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(48, 48, 48, 0.7);
+  z-index: 999;
+}
+.modalPopup {
+  background-color: white;
+  width: 900px;
+  display: block;
+  padding: 30px 10px;
+  border-radius: 10px;
+  position: relative;
+}
+.closing {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 25px;
+}

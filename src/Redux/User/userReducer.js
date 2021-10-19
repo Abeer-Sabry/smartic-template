@@ -64,6 +64,13 @@ const userReducer = (state = initialState, action) => {
                 isLogginIn: false
 
             }
+        case usertypes.CLEAR_TOKEN:
+            return {
+                ...state,
+                userInfo: {},
+                isLogginIn: false
+
+            }
 
 
 

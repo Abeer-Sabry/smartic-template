@@ -5,5 +5,5 @@ import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
 
 const Middlewares = [thunk]
-export const stroe = createStore(rootReducer, composeWithDevTools(applyMiddleware(...Middlewares)))
-export const persistor = persistStore(stroe)
+export const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(...Middlewares)))
+export const persistor = persistStore(store)

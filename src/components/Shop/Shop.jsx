@@ -12,6 +12,7 @@ import SearchBar from './SearchBar/SearchBar.jsx'
 import Footer from '../Footer/Footer'
 
 
+
 const Shop = () => {
   return (
     <>
@@ -53,6 +54,7 @@ const Shop = () => {
             </div>
           </div>
           <Footer />
+
         </div>
 
       </div>

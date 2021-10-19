@@ -8,6 +8,7 @@ const usertypes = {
     USER_LOGIN_SUCCESS: 'USER_LOGIN_SUCCESS',
     USER_LOGIN_ERROR: 'USER_LOGIN_ERROR',
     // LOGOUT
-    USER_LOGOUT: 'USER_LOGOUT'
+    USER_LOGOUT: 'USER_LOGOUT',
+    CLEAR_TOKEN: 'CLEAR_TOKEN'
 }
 export default usertypes
