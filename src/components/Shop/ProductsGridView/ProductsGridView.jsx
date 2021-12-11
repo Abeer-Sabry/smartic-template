@@ -34,7 +34,7 @@ const ProductsGridView = () => {
                         ))
 
                 }
-              
+
             </div>
         </div>
     )

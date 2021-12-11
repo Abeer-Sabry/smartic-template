@@ -10,23 +10,23 @@ import UserRegister from './components/UserRegister/UserRegister.jsx';
 import Contact from './components/Contact/Contact.jsx';
 import { useSelector } from 'react-redux'
 import FormikContainer from './components/Forms/FormikContainer.jsx';
-import jwt_decode from 'jwt-decode'
-import { useEffect } from 'react';
+// import jwt_decode from 'jwt-decode'
+// import { useEffect } from 'react';
 
 
 const App = () => {
   const { userInfo } = useSelector(({ user }) => user)
-  const token = userInfo.token
-  const decoded = jwt_decode(token);
-  console.log(decoded.id)
+  // const token = userInfo.token
+  // const decoded = jwt_decode(token);
+  // console.log(decoded.id)
 
-  useEffect(() => {
-    const decoded = jwt_decode(token);
-    if (!decoded.id) {
-        console.log("HHHH")
-    }
+  // useEffect(() => {
+  //   const decoded = jwt_decode(token);
+  //   if (!decoded.id) {
+  //     console.log("HHHH")
+  //   }
 
-  }, [token])
+  // }, [token])
   return (
     <div className="App">
       <Navbar />
