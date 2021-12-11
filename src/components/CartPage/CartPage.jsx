@@ -65,10 +65,9 @@ const CartPage = () => {
 
                         </div>}
                     <div className="w-25 ml-4">
-                        <div className={`${style.height}  text-center mb-3  bg-secondary`}>
-                            <button className=" bg-success text-white p-2">TOTAL PRICE :${CartItems.reduce((x, y) => x + y.qty * y.price, 0)}</button>
-                            <h1>hii</h1>
-                            <button className=" bg-info p-2  "><NavLink className="text-white" to="/shop">continue shoping</NavLink></button>
+                        <div className={`${style.height}  text-center mb-3  `}>
+                            <button className={`${style.buttons}  bg-success text-white p-2`}>TOTAL PRICE :${CartItems.reduce((x, y) => x + y.qty * y.price, 0)}</button>
+                            <button className={`${style.buttons}  bg-info p-2 ml-2 `}><NavLink className="text-white" to="/shop">continue shoping</NavLink></button>
                         </div>
                         <div className="  ">
                             <button className="btn btn-danger" onClick={() => dispatch(clearCartAction())} > Claer Cart</button>
